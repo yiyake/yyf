@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
+        <link rel="stylesheet" href="skins/eden.css" media="screen">
+    	<link href="http://libs.useso.com/js/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    	<link href="css/animate.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="item">
+			<img src="http://lorempixel.com/1200/400/sports/3/">
+			<div class="carousel-caption">
+				<h3>
+		                                Labore et dolore magna aliquyam erat</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+			</div>
+		</div>
+	</body>
+</html>
+		//var info=abl1_info[abl1num].name+","+"position"+abl1_info[abl1num].start+"-"+abl1_info[abl1num].end+","+"descripe"+abl1_info[abl1num].desc;
+
+	function getElementsByClassName(n) {
+	    var classElements = [],allElements = document.getElementsByTagName('*');
+	    for (var i=0; i< allElements.length; i++ )
+	   {
+	       if (allElements[i].className == n ) {
+	           classElements[classElements.length] = allElements[i];
+	        }
+	   }
+	   return classElements;
+	}
+	
+	
+		var list_obja = getElementsByClassName("fa");  
+		var list_objb = getElementsByClassName("fb");
+		console.log(list_objb.length);	
+		for (var i = 0; i <= list_objb.length; i++) {  
+		   
+		   (function(i){
+				//var p = i    
+				list_objb[i].onclick = function() {      
+					alert(i);      
+				}
+		   })(i);
+		}
+
+//		for (var i = 0; i <= list_obja.length; i++) {  
+//		   //var info=abl1_info[i].name+","+"position"+abl1_info[i].start+"-"+abl1_info[i].end+","+"descripe:"+abl1_info[i].desc;
+//		   (function(i){
+//				//var p = i    
+//				list_obja[i].onclick = function() {      
+//					alert(i);      
+//				}
+//		   })(i);
+//		}
+
+//		for (var i = 0; i <= list_objb.length; i++) {  
+//			console.log(bcr_info[i]);
+//		   //var info=bcr_info[i].name+","+"position"+bcr_info[i].start+"-"+bcr_info[i].end+","+"descripe:"+bcr_info[i].desc;
+//		   (function(i){
+//				//var p = i    
+//				list_objb[i].onclick = function() {      
+//					alert(info);      
+//				}
+//		   })(i);
+//		}
+
+
+{name:"Propeptide",color:"#104A7F"},{name:"Chain",color:"#6E7BA2"},
+    {name:"Peptide",color:"#DAF1FC"},    {name:"Transmembrane",color:"#BE1E2D"},{name:"Intramembrane",color:"#FAD2D9"},{name:"Domain",color:"#ED1C24"},{name:"Repeat",color:"#EA7075"},
+    {name:"Calcium binding",color:"#F8AFB3"},{name:"Zinc finger",color:"#D97D25"},{name:"DNA binding",color:"#F89420"},{name:"Nucleotide binding",color:"#F6B667"},,{name: "Region",color:"#F9ED32"},{name:"Coiled coil",color:"#FBE3C7"},
+    {name:"Motif",color:"#C1A72F"},{name:"Compositional bias",color:"#E8C51D"},{name:"Active site",color:"#542C88"},{name:"Metal binding",color:"#A084BD"},
+    {name:"Binding site",color:"#B2509E"},
+    {name:"Site",color:"#D49DC7"},{name:"Non-standard residue",color:"#ED2891"},{name:"Modified residue",color:"#542C88"},{name:"Lipidation",color:"#A084BD"},{name:"Glycosylation",color:"#D3C3E0"},
+    {name:"Disulfide bond",color:"#B2509E"},{name:"Cross-link",color:"#D49DC7"},{name:"Alternative sequence",color:"#CACCDB"},{name:"Natural variant",color:"#CCD1D1"},{name:"Helix",color:"#3953A4"},
+    {name:"Turn",color:"#754C29"},{name:"Beta strand",color:"#CEAC8F"},{name:"Topological domain",color:"#7E1918"}
+var f_color=[{name:Signal,color:#00AEEF},{name:Transit peptide,color:#9EDDF9},{name:Propeptide,color:#104A7F},{name:Chain,color:#6E7BA2},{name:Peptide,color:#DAF1FC},{name:Topological domain,color:#7E1918},{name:Transmembrane,color:#BE1E2D},{name:Intramembrane,color:#FAD2D9},{name:Domain,color:#ED1C24},{name:Repeat,color:#EA7075},{name:Calcium binding,color:#F8AFB3},{name:Zinc finger,color:#D97D25},{name:DNA binding,color:#F89420},{name:Nucleotide binding,color:#F6B667},{name: Region,color:#F9ED32},{name:Coiled coil,color:#FBE3C7},{name:Motif,color:#C1A72F},{name:Compositional bias,color:#E8C51D},{name:Active site,color:#542C88},{name:Metal binding,color:#A084BD},{name:Binding site,color:#B2509E},{name:Site,color:#D49DC7},{name:Non-standard residue,color:#ED2891},{name:Modified residue,color:#542C88},{name:Lipidation,color:#A084BD},{name:Glycosylation,color:#D3C3E0},{name:Disulfide bond,color:#B2509E},{name:Cross-link,color:#D49DC7},{name:Alternative sequence,color:#CACCDB},{name:Natural variant,color:#CCD1D1},{name:Helix,color:#3953A4},{name:Turn,color:#754C29},{name:Beta strand,color:#CEAC8F}]
+,{name:"Transmembrane",color:"#BE1E2D"},{name:"Intramembrane",color:"#FAD2D9"},{name:"Domain",color:"#ED1C24"},{name:"Repeat",color:"#EA7075"},{name:"Calcium binding",color:"#F8AFB3"},{name:"Zinc finger",color:"#D97D25"},{name:"DNA binding",color:"#F89420"},{name:"Nucleotide binding",color:"#F6B667"},{name: "Region",color:"#F9ED32"},{name:"Coiled coil",color:"#FBE3C7"},{name:"Motif",color:"#C1A72F"},{name:"Compositional bias",color:"#E8C51D"},{name:"Active site",color:"#542C88"},{name:"Metal binding",color:"#A084BD"},{name:"Binding site",color:"#B2509E"},{name:"Site",color:"#D49DC7"},{name:"Non-standard" residue,color:"#ED2891"},{name:"Modified residue",color:"#542C88"},{name:"Lipidation",color:"#A084BD"},{name:"Glycosylation",color:"#D3C3E0"},{name:"Disulfide bond",color:"#B2509E"},{name:"Cross-link",color:"#D49DC7"},{name:"Alternative sequence",color:"#CACCDB"},{name:"Natural variant",color:"#CCD1D1"},{name:"Helix",color:"#3953A4"},{name:"Turn",color:"#754C29"},{name:"Beta strand",color:"#CEAC8F"}
